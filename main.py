@@ -13,7 +13,6 @@ mouse = MouseController()
 
 start_url = "https://meusisu.com"
 
-# garbage
 # 🔪 rpc
 
 
@@ -24,8 +23,8 @@ async def get_header(page: uc.Tab):
     for svg in doc.css("svg"):
         svg.drop()
     return doc.get()
-
-
+    
+# garbage
 async def save_table(path, table_html, banner):
     final_table = "".join(table_html)
 
